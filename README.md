@@ -31,18 +31,11 @@ Welcome to **The Game Room** — your one-stop digital hangout for playing casua
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript  
-- **Frameworks**: React (optional), Bootstrap / Tailwind (for styling)  
-- **Backend**: Node.js / Express (for multiplayer or scoring logic)  
-- **Database**: Firebase / MongoDB / Supabase  
+- **Frontend**: React.js  
+- **Backend**: Node.js / Express 
+- **Database**: MongoDB  
 - **Real-time**: Socket.io *(for multiplayer features)*
 
 ---
 
-## 🚀 Getting Started
 
-### Clone the repository
-
-```bash
-git clone https://github.com/yourusername/the-game-room.git
-cd the-game-room
