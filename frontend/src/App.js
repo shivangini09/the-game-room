@@ -5,6 +5,8 @@ import Home from './pages/home';
 import './App.css';
 import DumbCharades from './components/DumbCharades'; // adjust path as needed
 import MakeAWord from './components/makeaword';
+import EnglishToHindiGame from './components/engtohindiword'
+
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/charades" element={<DumbCharades />} />
         <Route path="/makeaword" element={<MakeAWord />} />
+        <Route path="/eng-hindi" element={<EnglishToHindiGame />} />
+
       </Routes>
     </Router>
   );
