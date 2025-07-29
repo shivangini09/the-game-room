@@ -4,8 +4,7 @@ import Navbar from './components/navbar';
 import Home from './pages/home';
 import './App.css';
 import DumbCharades from './components/DumbCharades'; // adjust path as needed
-
-
+import MakeAWord from './components/makeaword';
 
 
 function App() {
@@ -14,11 +13,14 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {<Route path="/charades" element={<DumbCharades />} />}
+        <Route path="/charades" element={<DumbCharades />} />
+        <Route path="/makeaword" element={<MakeAWord />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
+
+
 

@@ -7,7 +7,7 @@ const games = [
     },
     {
       id: 2,
-      name: "Guess The Song",
+      name: "Make a Word",
       description: "Play a short clip, and players guess the song.",
       route: "/guess-the-song"
     },

@@ -4,7 +4,7 @@ import '../App.css';
 
 const games = [
   { title: "Dumb Charades", image: "/dumbchrades1.png", route: "/charades" },
-  { title: "Guess the Song", image: "/images/guess-song.jpg", route: "/guess-the-song" },
+  { title: "Make a Word", image: "/wordgame.png", route: "/makeaword" },
   { title: "Rapid Fire", image: "/images/rapid-fire.jpg", route: "/rapid-fire" },
   // add more here
 ];
