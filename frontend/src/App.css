@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   background-image: radial-gradient(#ffd6d6 2px, transparent 2px),
                     radial-gradient(#ffecd1 2px, transparent 2px);
   background-position: 0 0, 30px 30px;
@@ -6,8 +8,9 @@ body {
 }
 
 nav {
-  background-color: #7dcfb6;
-  color: white;
+  background: linear-gradient(to right, #c2e9fb, #d4fc79, #fbc2eb);
+
+  color: black;
   padding: 10px 30px;
   display: flex;
   justify-content: space-between;
@@ -19,7 +22,7 @@ nav {
 
 nav a {
   margin-left: 16px;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -82,5 +85,39 @@ nav a:hover {
   font-size: 1.3rem;
   color: #444;
   margin-bottom: 40px;
+}
+
+.charades-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.difficulty-buttons button,
+.charades-buttons button {
+  margin: 10px;
+  padding: 12px 24px;
+  background: #ffe082;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.difficulty-buttons button:hover,
+.charades-buttons button:hover {
+  background: #ffd54f;
+}
+
+.movie-card {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  margin: 30px auto;
+  background-color: #fff3e0;
+  border-radius: 16px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 

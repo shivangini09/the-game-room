@@ -3,6 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Home from './pages/home';
 import './App.css';
+import DumbCharades from './components/DumbCharades'; // adjust path as needed
+
+
+
 
 function App() {
   return (
@@ -10,7 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* Routes for individual games will go here */}
+        {<Route path="/charades" element={<DumbCharades />} />}
       </Routes>
     </Router>
   );

@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 
-
 const games = [
-  { title: "Dumb Charades", image: "/dumbcharades.webp" },
-  { title: "Guess the Song", image: "/images/guess-song.jpg" },
-  { title: "Rapid Fire", image: "/images/rapid-fire.jpg" },
+  { title: "Dumb Charades", image: "/dumbcharades.webp", route: "/charades" },
+  { title: "Guess the Song", image: "/images/guess-song.jpg", route: "/guess-the-song" },
+  { title: "Rapid Fire", image: "/images/rapid-fire.jpg", route: "/rapid-fire" },
   // add more here
 ];
 
@@ -16,16 +16,16 @@ function Home() {
       <p className="tagline">Make your evening gamey with friends & fun!</p>
 
       <div className="game-container">
-  {games.map((game, index) => (
-    <div key={index} className="game-card">
-      <img src={game.image} alt={game.title} />
-      <h3>{game.title}</h3>
-    </div>
-  ))}
-</div>
-
+        {games.map((game, index) => (
+          <Link to={game.route} key={index} className="game-card">
+            <img src={game.image} alt={game.title} />
+            <h3>{game.title}</h3>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
 
 export default Home;
+
