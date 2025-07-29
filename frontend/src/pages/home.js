@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 
 const games = [
-  { title: "Dumb Charades", image: "/dumbcharades.webp", route: "/charades" },
+  { title: "Dumb Charades", image: "/dumbchrades1.png", route: "/charades" },
   { title: "Guess the Song", image: "/images/guess-song.jpg", route: "/guess-the-song" },
   { title: "Rapid Fire", image: "/images/rapid-fire.jpg", route: "/rapid-fire" },
   // add more here
