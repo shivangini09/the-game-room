@@ -28,18 +28,19 @@ function EnglishToHindiGame() {
     setWord(randomWord);
 
     // 3. Fetch translation from LibreTranslate
-    const transRes = await fetch('https://libretranslate.de/translate', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        q: randomWord,
-        source: 'en',
-        target: 'hi',
-        format: 'text'
-      })
-    });
-    const data = await transRes.json();
-    setTranslation(data.translatedText);
+    const transRes = await fetch(`https://translation.googleapis.com/language/translate/v2?key=YOUR_API_KEY`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          q: randomWord,
+          source: 'en',
+          target: 'hi',
+          format: 'text'
+        })
+      });
+      const data = await transRes.json();
+      setTranslation(data.data.translations[0].translatedText);
+      
 
     // 4. Countdown logic
     let counter = 5;

@@ -169,3 +169,71 @@ button {
   border-radius: 8px;
   cursor: pointer;
 }
+
+.eng-hindi-game {
+  background-color: #e0f2f1; /* pale teal */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #003c43;
+  text-align: center;
+}
+
+.eng-hindi-game h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00575c;
+}
+
+.eng-hindi-game h3 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #002f34;
+}
+
+.eng-hindi-game p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: #004d4d;
+}
+
+.eng-hindi-game button {
+  margin: 0.6rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #7091e6; /* deep teal */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.eng-hindi-game button:hover {
+  background-color: #5674c7;
+  transform: scale(1.05);
+}
+
+.eng-hindi-game button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+  .eng-hindi-game h2 {
+    font-size: 1.5rem;
+  }
+  .eng-hindi-game h3 {
+    font-size: 2rem;
+  }
+  .eng-hindi-game p {
+    font-size: 1.1rem;
+  }
+  .eng-hindi-game button {
+    width: 90%;
+  }
+}
