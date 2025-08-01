@@ -15,7 +15,7 @@ Welcome to **The Game Room** — your one-stop digital hangout for playing casua
 - 🎯 **English-to-Hindi Word Challenge**  
   Compete with friends to see who can translate words the fastest and most accurately!
 
-- 🎬 **Guess the Dialogue** *(Coming soon)*  
+- 🎬 **Dumbcharades**   
   Identify iconic Bollywood dialogues — can you name the movie or the actor?
 
 - 🔤 **Emoji Movie Decoder** *(Coming soon)*  
