@@ -34,7 +34,7 @@ Welcome to **The Game Room** — your one-stop digital hangout for playing casua
 - **Frontend**: React.js  
 - **Backend**: Node.js / Express 
 - **Database**: MongoDB  
-- **Real-time**: Socket.io *(for multiplayer features)*
+
 
 ---
 
