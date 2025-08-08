@@ -23,7 +23,7 @@ function EnglishToHindiGame() {
     const words = await res.json();
     const filtered = words.map(w => w.word).filter(w => difficultyFilters[difficulty](w));
 
-    // 2. Pick a random word
+    // 2. Pick a random word!
     const randomWord = filtered[Math.floor(Math.random() * filtered.length)];
     setWord(randomWord);
 
