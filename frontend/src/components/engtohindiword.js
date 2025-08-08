@@ -27,7 +27,7 @@ function EnglishToHindiGame() {
     const randomWord = filtered[Math.floor(Math.random() * filtered.length)];
     setWord(randomWord);
 
-    // 3. Fetch translation from LibreTranslate
+    // Fetch translation from LibreTranslate
     const transRes = await fetch(`https://translation.googleapis.com/language/translate/v2?key=YOUR_API_KEY`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
