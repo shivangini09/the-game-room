@@ -42,7 +42,7 @@ function EnglishToHindiGame() {
       setTranslation(data.data.translations[0].translatedText);
       
 
-    // 4. Countdown logic
+    //  Countdown logic
     let counter = 5;
     const interval = setInterval(() => {
       counter--;
