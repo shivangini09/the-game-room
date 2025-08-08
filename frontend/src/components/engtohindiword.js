@@ -18,7 +18,7 @@ function EnglishToHindiGame() {
     setShowTranslation(false);
     setTimer(5);
 
-    // 1. Fetch English words from Datamuse
+    
     const res = await fetch('https://api.datamuse.com/words?ml=common&max=1000');
     const words = await res.json();
     const filtered = words.map(w => w.word).filter(w => difficultyFilters[difficulty](w));
