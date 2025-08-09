@@ -70,7 +70,7 @@ function EnglishToHindiGame() {
           {!showTranslation ? (
             <p>⏳ {timer} seconds...</p>
           ) : (
-            <p>💬 Hindi Meaning: <strong>{translation}</strong></p>
+            <p> Hindi Meaning: <strong>{translation}</strong></p>
           )}
           <button onClick={startGame}>Next Word</button>
         </div>
